@@ -1,0 +1,90 @@
+---
+
+---
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="brand">
+                <h3>MOA BURGERS</h3>
+                <p>
+                    Propiedad de Have S'Moa, una subsidiaria de la Corporación
+                    Agrícola de Reach.
+                </p>
+            </div>
+            <div class="links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos de la UNSC</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <p>
+                &copy; 2560 Have S'Moa. Todos los derechos reservados. No
+                afiliado directamente con el Comando Espacial de las Naciones
+                Unidas.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: var(--hex-brand);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 4rem 2rem 2rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+
+    h3 {
+        color: white;
+        margin-top: 0;
+    }
+
+    .links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: var(--hex-secondary);
+    }
+
+    .disclaimer {
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.8rem;
+        text-align: center;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .links {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+</style>

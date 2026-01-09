@@ -1,0 +1,127 @@
+---
+
+---
+
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="content">
+            <h2>¿Qué es una <span class="text-gradient">Moa Burger</span>?</h2>
+            <p>
+                Originaria del planeta Reach, la Moa es una gran ave no voladora
+                conocida por su carne magra y rica en proteínas. Durante
+                décadas, ha sido el manjar predilecto de los colonos y soldados
+                de la UNSC.
+            </p>
+            <p>
+                Nuestras hamburguesas están elaboradas con los cortes más
+                selectos, sazonados con especias de colonias interiores y asadas
+                a la perfección. No es solo comida rápida, es una experiencia
+                gastronómica interplanetaria.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="value">45g</span>
+                    <span class="label">Proteína</span>
+                </div>
+                <div class="stat-item">
+                    <span class="value">0%</span>
+                    <span class="label">Aditivos Artificiales</span>
+                </div>
+                <div class="stat-item">
+                    <span class="value">100%</span>
+                    <span class="label">Sabor Reach</span>
+                </div>
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="glow-effect"></div>
+            <img
+                src="https://anyfiles.obs.ap-southeast-3.myhuaweicloud.com/moa-burger.jpg"
+                alt="Deliciosa Moa Burger"
+            />
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-section {
+        padding: 8rem 2rem;
+        background-color: var(--hex-surface);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: var(--hex-text);
+    }
+
+    p {
+        color: var(--hex-text-muted);
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .stats {
+        display: flex;
+        gap: 3rem;
+        margin-top: 3rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); /* Dark border for light theme */
+        padding-top: 2rem;
+    }
+
+    .stat-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value {
+        font-family: "Orbitron", sans-serif;
+        font-size: 2rem;
+        color: var(--hex-secondary);
+        font-weight: 700;
+    }
+
+    .label {
+        font-size: 0.9rem;
+        color: var(--hex-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .image-wrapper {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transform: perspective(1000px) rotateY(-5deg);
+        transition: transform 0.3s ease;
+    }
+
+    /* Removed glow-effect */
+
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .image-wrapper {
+            transform: none;
+            margin-top: 2rem;
+        }
+    }
+</style>

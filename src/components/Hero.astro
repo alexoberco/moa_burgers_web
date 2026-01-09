@@ -1,0 +1,110 @@
+---
+
+---
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <div class="logo-container">
+            <img
+                src="https://anyfiles.obs.ap-southeast-3.myhuaweicloud.com/logo.jpg"
+                alt="Moa Burgers Logo"
+                class="logo"
+            />
+        </div>
+        <h1 class="text-gradient">El Sabor Legendario<br />de Reach</h1>
+        <p class="tagline">
+            Desde las praderas de Reach hasta tu mesa en cualquier colonia de la
+            UEG.
+        </p>
+        <div class="cta-container">
+            <a href="#about" class="btn-primary">Descubre la Leyenda</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--hex-surface);
+        background-image: url("https://anyfiles.obs.ap-southeast-3.myhuaweicloud.com/hero-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Lighter overlay to blend with white content below */
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.8) 90%,
+            var(--hex-bg) 100%
+        );
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 800px;
+        padding: 2rem;
+        animation: fadeIn 1.5s ease-out;
+    }
+
+    .logo-container {
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        width: 180px; /* Slightly larger for the new friendly logo */
+        height: auto;
+        /* No neon glow, just a clean look or subtle shadow */
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        border-radius: 50%; /* It looked circular in the image */
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        font-weight: 900;
+    }
+
+    .tagline {
+        font-size: 1.25rem;
+        color: var(--hex-text-muted);
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+</style>
